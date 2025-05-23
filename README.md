@@ -69,24 +69,23 @@ These robots are designed for rapid deployment and high-precision motion in agri
    ssh pi@<your_pi_ip_address>
    
 
-   
+```bash
 source /opt/ros/noetic/setup.bash
-
+```bash
 pip3 install -r requirements.txt
-
+```bash
 roscore
-
+```bash
 rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=57600
 rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB1 _baud:=57600
-
+```bash
 python3 scripts/cable_platform_2d_controller.py
-
+```bash
 python3 scripts/cable_platform_3d_controller.py
-
+```bash
 python3 scripts/teleop_controller_2D.py
-
+```bash
 python3 scripts/teleop_controller_3D.py
-    ```bash
 
 ## Bill of Materials (BOM)
 
