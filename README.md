@@ -68,6 +68,8 @@ These robots are designed for rapid deployment and high-precision motion in agri
    ```bash
    ssh pi@<your_pi_ip_address>
    
+
+   
 source /opt/ros/noetic/setup.bash
 
 pip3 install -r requirements.txt
@@ -84,7 +86,7 @@ python3 scripts/cable_platform_3d_controller.py
 python3 scripts/teleop_controller_2D.py
 
 python3 scripts/teleop_controller_3D.py
-
+    ```bash
 
 ## Bill of Materials (BOM)
 
