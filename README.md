@@ -2,20 +2,27 @@
 
 ## Project Overview
 
-This repository contains the complete open-source hardware and software for both 2D and 3D Winch-Integrated Cable-Driven Parallel Robots (WICDPRs). These robots are designed for rapid deployment in agricultural environments—such as greenhouses or field plots—where soil compaction and flexibility are key concerns. The system features both planar (2D) and spatial (3D) designs, leveraging on-platform winches, ROS-based PID control, IMU feedback, and modular electronics.
-
----
-
+This repository contains the full open-source hardware, software, and documentation for both 2D and 3D Winch-Integrated Cable-Driven Parallel Robots (WICDPRs).  
+These robots are designed for rapid deployment and high-precision motion in agricultural environments (e.g., greenhouses, field plots), minimizing soil compaction and maximizing flexibility by keeping all winches on the mobile platform.
 ## System Features
 
-- **2D and 3D Cable-Driven Platforms:** Modular design for planar and full spatial control.
-- **Real-Time Feedback:** Rotary encoders and IMU (MPU6050) for position and tilt.
-- **Double-Loop PID Control:** Robust movement and self-leveling using Ziegler–Nichols-tuned gains.
-- **Teleoperation:** Manual keyboard control via ROS teleop nodes.
-- **Safety:** E-stop, cable tension checks, WiFi router for secure SSH access.
-- **Comprehensive Documentation:** Bills of materials (BOM), wiring diagrams, STL files, and videos.
+- **2D and 3D platforms:** Planar and spatial robots for different workspace needs.
+- **Real-time feedback:** Rotary encoders and MPU6050 IMU for position and tilt.
+- **Double-loop PID control:** Ziegler–Nichols tuned, with auto-leveling.
+- **Teleoperation:** Manual control using ROS teleop nodes.
+- **Safety:** E-stop support, tension checks, WiFi router for secure SSH.
+- **Comprehensive docs:** Bills of Materials (BOM), STL files, wiring diagrams, and demo videos.
+## Directory Structure
 
----
 
-## Repository Structure
 
+
+
+
+
+## Bill of Materials (BOM)
+
+- [2D_WICDPR_BOM.xlsx](docs/2D_WICDPR_BOM.xlsx)
+- [3D_WICDPR_BOM.xlsx](docs/3D_WICDPR_BOM.xlsx)
+
+*All components, suppliers, and links are included. Please check the BOM before assembly.*
