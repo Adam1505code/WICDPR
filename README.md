@@ -67,14 +67,15 @@ These robots are designed for rapid deployment and high-precision motion in agri
 2. **SSH into the Pi** from your PC using its IP address:
    ```bash
    ssh pi@<your_pi_ip_address>
+   ```
 3. Source the ROS Noetic environment:
-   ```
+   ```bash
 source /opt/ros/noetic/setup.bash
-
-4. Install all Python requirements:
    ```
+4. Install all Python requirements:
+   ```bash
 pip3 install -r requirements.txt
-
+   ```
 5. Start ROS core:
    ```
 roscore
