@@ -65,20 +65,14 @@ These robots are designed for rapid deployment and high-precision motion in agri
 
 1. **Connect the Pi to your WiFi router** (built-in or TP-Link USB adapter).
 2. **SSH into the Pi** from your PC using its IP address:
-   ```bash
-   ssh pi@<your_pi_ip_address>
-   ```
+   
+   `ssh pi@<your_pi_ip_address>`
 3. Source the ROS Noetic environment:
-   ```bash
-source /opt/ros/noetic/setup.bash
-   ```
+   `source /opt/ros/noetic/setup.bash`
 4. Install all Python requirements:
-   ```bash
-pip3 install -r requirements.txt
-   ```
+   `pip3 install -r requirements.txt`
 5. Start ROS core:
-   ```
-roscore
+    `roscore`
 
 6. Start ROS serial communication with the first Arduino:
    ```
