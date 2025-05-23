@@ -67,15 +67,24 @@ These robots are designed for rapid deployment and high-precision motion in agri
 2. **SSH into the Pi** from your PC using its IP address:
    ```bash
    ssh pi@<your_pi_ip_address>
-3.Source the ROS Noetic environment:
+3. Source the ROS Noetic environment:
    ```
 source /opt/ros/noetic/setup.bash
+
+4. Install all Python requirements:
    ```
 pip3 install -r requirements.txt
+
+5. Start ROS core:
    ```
 roscore
+
+6. Start ROS serial communication with the first Arduino:
    ```
 rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=57600
+
+
+ ```
 rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB1 _baud:=57600
    ```
 python3 scripts/cable_platform_2d_controller.py
