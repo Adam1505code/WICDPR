@@ -73,22 +73,18 @@ These robots are designed for rapid deployment and high-precision motion in agri
    `pip3 install -r requirements.txt`
 5. Start ROS core:
     `roscore`
-
 6. Start ROS serial communication with the first Arduino:
-   ```
-rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=57600
-
-
- ```
-rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB1 _baud:=57600
-   ```
-python3 scripts/cable_platform_2d_controller.py
-   ```
-python3 scripts/cable_platform_3d_controller.py
-   ```
-python3 scripts/teleop_controller_2D.py
-   ```
-python3 scripts/teleop_controller_3D.py
+    `rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=57600`
+7. Start ROS serial communication with the second Arduino:
+   `rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB1 _baud:=57600`
+8. Run the 2D WICDPR controller node:
+    `python3 scripts/cable_platform_2d_controller.py`
+9. Run the 3D WICDPR controller node:
+   `python3 scripts/cable_platform_3d_controller.py`
+10.Run 2D teleoperation:
+   `python3 scripts/teleop_controller_2D.py`
+11.Run 3D teleoperation:
+    `python3 scripts/teleop_controller_3D.py`
 
 ## Bill of Materials (BOM)
 
